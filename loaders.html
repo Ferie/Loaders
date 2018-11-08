@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Loaders</title>
+        <link href="./styles/base-style.css" rel="stylesheet">
+        <link href="./styles/spinners.css" rel="stylesheet">
+        <link href="./styles/colours.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.min.js"></script>
+    </head>
+
+    <body>
+        <main id="loaders"></main>
+
+        <script id="loaders-template" type="x-tmpl-mustache">
+            {{ #colours }}
+                <section class="section--{{ sectionColours.colour }} p-3">
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <header class="loader--title">Spinner</header>
+                            <div class="loader--spinner">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+        
+                        <div class="col-4">
+                            <header class="loader--title">Ring</header>
+                            <div class="loader--ring">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+        
+                        <div class="col-4">
+                            <header class="loader--title">Roller</header>
+                            <div class="loader--roller">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+        
+                        <div class="col-4">
+                            <header class="loader--title">Default</header>
+                            <div class="loader--default">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+        
+                        <div class="col-4">
+                            <header class="loader--title">Ellipsis</header>
+                            <div class="loader--ellipsis">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+        
+                        <div class="col-4">
+                            <header class="loader--title">Grid</header>
+                            <div class="loader--grid">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+        
+                        <div class="col-4">
+                            <header class="loader--title">Ripple</header>
+                            <div class="loader--ripple">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+        
+                        <div class="col-4">
+                            <header class="loader--title">Dual ring</header>
+                            <div class="loader--dual-ring"></div>
+                        </div>
+        
+                        <div class="col-4">
+                            <header class="loader--title">Triple bar</header>
+                            <div class="loader--facebook">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            {{ /colours }}
+        </script>
+
+        <script src="./js/loop-colours.js"></script>
+    </body>
+</html>
