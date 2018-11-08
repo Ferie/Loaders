@@ -1,4 +1,4 @@
-# Spinners
+# Loaders
 
 Cool examples of loaders and spinners in pure CSS.
 
